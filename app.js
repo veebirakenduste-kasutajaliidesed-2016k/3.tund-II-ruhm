@@ -82,6 +82,7 @@
       // hakka kuulama hiireklõpse
       this.bindMouseEvents();
     },
+
     bindMouseEvents: function(){
       document.querySelector('.add-new-jar').addEventListener('click', this.addNewClick.bind(this));
     },
@@ -90,6 +91,8 @@
       var title = document.querySelector('.title').value;
       var ingredients = document.querySelector('.ingredients').value;
       console.log(title + ' ' + ingredients);
+
+
 
       var new_jar = new Jar(title, ingredients);
       var li = new_jar.createHtmlElement();
